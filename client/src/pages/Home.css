@@ -1,0 +1,17 @@
+.userHome,
+.promotion,
+.news,
+.coffeeTips, 
+.aboutUs,
+.login {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.text {
+  color: white;
+  align-items: center;
+}

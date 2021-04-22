@@ -1,0 +1,18 @@
+.products {
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(224, 234, 241);
+}
+.popup-inner{
+    display: flex;
+    flex-direction: column;
+}
+.btn_addProduct {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+}

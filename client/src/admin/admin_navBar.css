@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #000000;
+    height: 150px;
+    display: flex;
+  }
+
+  .header_logo {
+    color:white;
+    font-size: 8px;
+    margin-left: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-bottom: -90px;
+  }
+
+  .menu_btn {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 7px;
+  }
+
+  .logout {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    right: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn_logout {
+    height: 35px;
+    width: 35px;
+    
+  }
+
+
+
