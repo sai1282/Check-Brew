@@ -27,6 +27,16 @@ app.get('/employee', (req, res) => {
     });
 });
 
+app.get('/product', (req, res) => {
+    db.query("SELECT * FROM product", (err, result) => {
+        if(err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
+});
+
 app.get('/staff', (req, res) => {
     db.query("SELECT * FROM staff", (err, result) => {
         if(err) {

@@ -16,6 +16,7 @@ import Products from './admin/product/Products';
 import Order from './admin/order/order';
 import CustomerList from './admin/employee/CustomerList';
 import Stock from './admin/inventory/stock';
+import UserCart from './pages/home/UserCart/UserCart';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="app">
 
-  {/*       <Router>
+        <Router>
      
       <Navbar/>
         <Switch>
@@ -33,11 +34,12 @@ function App() {
           <Route path='/coffeeTips' component={coffeeTips}/>
           <Route path='/aboutUs' component={aboutUs}/>
           <Route path='/login' component={Login}/>
+          <Route path='/UserCart' component={UserCart}/>
         </Switch>
-      </Router> */}
+      </Router>
 
 
-      <Router>
+{/*       <Router>
         <Bar />
         <Switch>
           <Route path="/overView">
@@ -56,7 +58,7 @@ function App() {
             <Stock />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
     </div>
   );
 }
