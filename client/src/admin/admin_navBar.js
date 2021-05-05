@@ -26,10 +26,10 @@ function admin_navBar() {
           <button className="menu_btn">Order</button>
         </Link>
         <Link to="/customerList">
-          <button className="menu_btn">CustomerList</button>
+          <button className="menu_btn">Employee List</button>
         </Link>
         <Link to="/stock">
-          <button className="menu_btn">Stock</button>
+          <button className="menu_btn">Inventory</button>
         </Link>
       </div>
       <div className="logout">

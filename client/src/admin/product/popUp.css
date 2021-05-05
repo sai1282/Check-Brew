@@ -2,7 +2,7 @@
 .popUp {
     position: fixed;
     width: 75%;
-    background-color: #ffffff;
+    background-color: #dee0e6;
     left: 200px;
     top: 300px;
 }
@@ -37,4 +37,12 @@
     position: absolute;
     top: 10px;
     right: 10px;
+}
+.img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 5px;
 }

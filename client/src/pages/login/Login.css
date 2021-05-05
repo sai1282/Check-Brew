@@ -24,3 +24,10 @@ body, html, #root, .Login, .container {
 .inputField {
     padding-top: 16px;
 }
+
+.Login-info {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}

@@ -15,7 +15,7 @@ import OverView from './admin/shopOverView/overView';
 import Products from './admin/product/Products';
 import Order from './admin/order/order';
 import CustomerList from './admin/employee/CustomerList';
-import Stock from './admin/inventory/stock';
+import Stock from './admin/inventory/Stock';
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="app">
 
-  {/*       <Router>
+        {/* <Router>
      
       <Navbar/>
         <Switch>
