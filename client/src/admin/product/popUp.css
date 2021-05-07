@@ -1,14 +1,22 @@
 
 .popUp {
     position: fixed;
-    width: 75%;
-    background-color: #dee0e6;
-    left: 200px;
-    top: 300px;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .popup-inner {
-    display: flex;
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: #fff;
 }
 
 
@@ -38,11 +46,20 @@
     top: 10px;
     right: 10px;
 }
-.img {
+.img-outline {
     display: flex;
     width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: none;
     margin-top: 5px;
     margin-left: 5px;
+    border-style: solid;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    width: 195px;
+    height:200px;
+    background-color: none;
 }

@@ -28,7 +28,7 @@ function admin_navBar() {
         <Link to="/customerList">
           <button className="menu_btn">Employee List</button>
         </Link>
-        <Link to="/stock">
+        <Link to="/inventory">
           <button className="menu_btn">Inventory</button>
         </Link>
       </div>

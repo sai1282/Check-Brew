@@ -2,7 +2,7 @@ import React from "react";
 import Axios from "axios";
 import { useState } from "react";
 
-function Stock() {
+function Inventory() {
   const [employeeList, setEmployeeList] = useState([]);
 
   const [name, setName] = useState("");
@@ -34,7 +34,6 @@ function Stock() {
 
   return (
     <div className="stock">
-      <div className="popup-inner">
         <h1>Employee Information</h1>
         <div className="information">
           <form action="">
@@ -97,14 +96,10 @@ function Stock() {
             </div>
             <button className="btn btn-success" onClick={addEmployee}> Add Employee</button>
           </form>
+          
         </div>
-        <hr />
-        <div className="employees">
-          <button className="btn btn-primary">Show employees</button>
-        </div>
-      </div>
     </div>
   );
 }
 
-export default Stock;
+export default Inventory;

@@ -7,6 +7,8 @@ import { useState } from "react";
 
 function Products() {
   const [productList, setProductList] = useState([]);
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [timedPopup, setTimePopup] = useState(false);
 
   const getProduct = () => {
     Axios.get("http://localhost:3001/product").then((response) => {
@@ -19,7 +21,7 @@ function Products() {
   return (
     <div className="home">
       <h1>Product list</h1>
-      <FcPlus className="btn_addProduct" />
+      <FcPlus className="btn_addProduct" onClick={() => setButtonPopup(true)} />
       {getProduct()}
       {productList.map((val, key) => {
         return (
@@ -44,7 +46,7 @@ function Products() {
         )
       })}
 
-      <Popup trigger={true}></Popup>
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
     </div>
   );
 }

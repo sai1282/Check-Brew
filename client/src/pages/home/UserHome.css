@@ -21,6 +21,23 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
 }
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn {
+    top: 200px;
+    left: 300px;
+    position: absolute;
+    display: flex;
+    
+}
+.btn-cart {
+    padding: 10px;
+}
+
 /* .userHome {
     display: flex;
     justify-content: center;
@@ -33,3 +50,4 @@
     height: 300px;
 
 } */
+

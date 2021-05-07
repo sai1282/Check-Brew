@@ -7,13 +7,16 @@ import Axios from 'axios';
 
 function PopUp(props) {
 
+    const [file, setFile] = React.useState("");
+
 /**
  * Component to handle file upload. Works for image
  * uploads, but can be edited to work for any file.
  */
 
- const [file, setFile] = React.useState("");
+ 
  function FileUpload() {
+
     // State to store uploaded file
     
   
@@ -24,19 +27,15 @@ function PopUp(props) {
       // Add code here to upload file to server
       // ...
     }
-    <input type="file" onChange={handleUpload} />
-    return(null);
-    
-  }
-
-    function DisplayImage() {
     return (
-        <div id="upload-box">
-          
-          {file && <ImageThumb image={file} />}
+        <div className="upload-box">
+            <input type="file" onChange={handleUpload}/>
+
         </div>
-      );
-  }
+    )
+    
+  
+}
 
   /**
  * Component to display thumbnail of image.
@@ -54,12 +53,13 @@ function PopUp(props) {
     const [issueDate, setissueDate] = useState("");
     const [expireDate, setexpireDate] = useState(""); */
 
-    
+    //trigger will receive true or false value
     return (props.trigger)? (
+        //if it true
         <div className="popUp">            
             <div className="popup-inner">
                 <div className="img-content">
-                    <p className="img">{DisplayImage}</p>
+                    <p className="img-outline">{file && <ImageThumb image={file}/>}</p>
                     <FileUpload className="btn btn-success"/>
                 </div>
                 <div className="left_texField">
@@ -72,66 +72,14 @@ function PopUp(props) {
                 <TextField id="outlined-basic" label="Expire date" variant="outlined" />
                 <button className="add-btn">Add Product</button>
                 </div>
-                <RiCloseCircleFill className="close-btn" />
+                <RiCloseCircleFill className="close-btn" onClick={() => props.setTrigger(false)}/>
             </div>
-                {/* <div className= "popup-inner">
-                    <h1>Employee Information</h1>
-                    <div className="information">
-                        <form action="">
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">
-                                    Name:
-                                    </label>
-                                <input 
-                                type="text" 
-                                className="form-control" 
-                                placeholder="Enter name"
-                                />
-                                <label htmlFor="name" className="form-label">
-                                    Age :
-                                    </label>
-                                <input 
-                                type="number" 
-                                className="form-control" 
-                                placeholder="Enter age"
-                                />
-                                <label htmlFor="name" className="form-label">
-                                    Country :
-                                    </label>
-                                <input 
-                                type="text" 
-                                className="form-control" 
-                                placeholder="Enter country"
-                                />
-                                <label htmlFor="name" className="form-label">
-                                    Position :
-                                    </label>
-                                <input 
-                                type="text" 
-                                className="form-control" 
-                                placeholder="Enter position"
-                                />
-                                <label htmlFor="name" className="form-label">
-                                    Wage :
-                                    </label>
-                                <input 
-                                type="number" 
-                                className="form-control" 
-                                placeholder="Enter wage"
-                                />
-                            </div>
-                            <button className="btn btn-success"> Add Employee</button>
-                        </form>
-                    </div>
-                    <hr/>
-                    <div className="employees">
-                        <button className="btn btn-primary">Show employees</button>
-                    </div>
-                </div> */}
-                <RiCloseCircleFill className="close-btn" />
+    
+                
             {props.children }
         </div>
-    ): ""; 
+    //if is false
+    ): ""; //return nothing
 }
 
 export default PopUp
