@@ -63,7 +63,6 @@ function PopUp(props) {
                     <FileUpload className="btn btn-success"/>
                 </div>
                 <div className="left_texField">
-                <TextField id="outlined-basic" label="Product ID" variant="outlined" />
                 <TextField id="outlined-basic" label="Product name" variant="outlined" />
                 <TextField id="outlined-basic" label="Product price" variant="outlined" />
                 </div>

@@ -20,13 +20,13 @@ function admin_navBar() {
           <button className="menu_btn">Overview</button>
         </Link>
         <Link to="/products">
-          <button className="menu_btn">Products</button>
+          <button className="menu_btn">Product</button>
         </Link>
         <Link to="/order">
           <button className="menu_btn">Order</button>
         </Link>
         <Link to="/customerList">
-          <button className="menu_btn">Employee List</button>
+          <button className="menu_btn">Staff</button>
         </Link>
         <Link to="/inventory">
           <button className="menu_btn">Inventory</button>

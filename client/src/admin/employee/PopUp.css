@@ -1,0 +1,8 @@
+.popUp {
+    display: flex;
+    left: 450px;
+    top: 200px;
+    background-color: aqua;
+    max-width: 500px;
+    max-height: 500px;
+}
